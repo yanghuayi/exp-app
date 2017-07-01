@@ -16,7 +16,7 @@ export default class MainScene extends Component {
     tabBarLabel: 'Order',
     // Note: By default the icon is only shown on iOS. Search the showIcon option below.
     tabBarIcon: ({ tintColor }) => (
-      <Ionicons name="wrench" size={32} color={tintColor} />
+      <Ionicons name="md-hammer" size={32} color={tintColor} />
     ),
   };
   render () {
