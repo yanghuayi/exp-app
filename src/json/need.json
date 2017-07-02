@@ -1,0 +1,102 @@
+{
+  "stateList": [{
+    "key": "",
+    "name": "全部"
+  }, {
+    "key": "1",
+    "name": "招标中"
+  }, {
+    "key": "2",
+    "name": "已截止"
+  }],
+  "typeList": [{
+    "key": "",
+    "name": "全部"
+  }, {
+    "key": "3",
+    "name": "线槽工"
+  }, {
+    "key": "4",
+    "name": "水电工"
+  }, {
+    "key": "5",
+    "name": "泥瓦工"
+  }, {
+    "key": "6",
+    "name": "木工"
+  }, {
+    "key": "7",
+    "name": "漆工"
+  }],
+  "contentList": [{
+    "state": "on",
+    "img": "https://www.huomanju.com/Images/Building/default.jpg",
+    "name": "两江春城",
+    "type": {
+      "id": 3,
+      "name": "线槽工"
+    },
+    "time": "2017-3-8",
+    "siteType": "工装",
+    "address": "渝北区冉家坝",
+    "layout": "三室一厅",
+    "area": "89.00m2",
+    "id": 1
+  }, {
+    "state": "on",
+    "img": "https://www.huomanju.com/Images/Building/default.jpg",
+    "name": "金科十年城",
+    "type": {
+      "id": 6,
+      "name": "木工"
+    },
+    "time": "2017-3-8",
+    "siteType": "工装",
+    "address": "渝北区冉家坝",
+    "layout": "三室一厅",
+    "area": "89.00m2",
+    "id": 1
+  }, {
+    "state": "end",
+    "img": "https://www.huomanju.com/Images/Building/default.jpg",
+    "name": "老街印象",
+    "type": {
+      "id": 5,
+      "name": "泥水工"
+    },
+    "time": "2017-3-8",
+    "siteType": "工装",
+    "address": "渝北区冉家坝",
+    "layout": "三室一厅",
+    "area": "89.00m2",
+    "id": 1
+  }, {
+    "state": "on",
+    "img": "https://www.huomanju.com/Images/Building/default.jpg",
+    "name": "两江春城",
+    "type": {
+      "id": 4,
+      "name": "水电工"
+    },
+    "time": "2017-3-8",
+    "siteType": "工装",
+    "address": "渝北区冉家坝",
+    "layout": "三室一厅",
+    "area": "89.00m2",
+    "id": 1
+  }, {
+    "state": "on",
+    "img": "https://www.huomanju.com/Images/Building/default.jpg",
+    "name": "两江春城",
+    "type": {
+      "id": 7,
+      "name": "漆工"
+    },
+    "time": "2017-3-8",
+    "siteType": "工装",
+    "address": "渝北区冉家坝",
+    "layout": "三室一厅",
+    "area": "89.00m2",
+    "id": 1
+  }]
+}

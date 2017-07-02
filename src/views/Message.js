@@ -2,7 +2,7 @@
 
 import React, {Component} from 'react';
 import {View, Button} from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 export default class MainScene extends Component {
   constructor (props) {
@@ -13,10 +13,11 @@ export default class MainScene extends Component {
     };
   };
   render () {
+    const { navigate } = this.props.navigation;
     return (
       <Button
-        onPress={() => this.props.navigation.goBack()}
-        title="Go back home"
+        onPress={() => navigate('Home')}
+        title="Go home"
       />
     )
   }

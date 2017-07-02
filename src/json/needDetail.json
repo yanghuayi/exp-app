@@ -1,0 +1,52 @@
+{
+	"data": 200,
+	"msg": "成功",
+	"needDetail": {
+		"sildeImage": [
+			"https://www.huomanju.com/Images/PersonalCase/85/179/201703270252102786729.jpg",
+			"https://www.huomanju.com/Images/PersonalCase/85/179/201703270252102025478.jpg",
+			"https://www.huomanju.com/Images/ConstructionSite/201703220733477055554.jpg",
+			"https://www.huomanju.com/Images/ConstructionSite/201703220733476606749.jpg",
+			"https://www.huomanju.com/Images/PersonalCase/85/179/201703270252102025478.jpg"
+		],
+		"sildeText": [
+			"效果图",
+			"客厅",
+			"阳台",
+			"阳台2",
+			"屋顶"
+		],
+		"Msg": [
+			"家装",
+			"普通住宅",
+			"三室一厅",
+			"86M²"
+		],
+		"needType": "3",
+		"typeText": "线槽招标中",
+		"progress": 60,
+    "workerHead": [
+      "https://wx.qlogo.cn/mmopen/xsPaWJR785M0ibVqyokksulY1A3ia2dn4N1zo7htdfMoTDa3KZlKBJDia0nnL7k1xKYhm51ibFJRxj7fDbdulxb0glDniaTBptOoe/0",
+      "https://www.huomanju.com/images/head/worker/1591/201703271100012740.jpg",
+      "https://wx.qlogo.cn/mmopen/CjZticf2S7xibbOsInHlmMp1I8eibzy1Wf7ItsZmGaIjNtJiaus40hbbMfpvvedtgKYXX6bIdNKqibWKdrTD3wNWb0tjNEwuZXDfU/0",
+      "https://wx.qlogo.cn/mmopen/7P6tabmfrj3za2YcB2P0vT9GEa1WibtjvCD9SrcI49NM5vFuNYcVImibVZgOkKdy7uNyjdia1uib6De8iaBngbVibYiaE4nw9Fm6sSY/0"
+    ],
+    "workerMore": "已有 6人投标",
+    "engineering": [{
+      "name": "打线槽",
+      "value": "70㎡"
+    }, {
+      "name": "拆整墙体",
+      "value": "15㎡"
+    }, {
+      "name": "拆半墙体",
+      "value": "15㎡"
+    }, {
+      "name": "原墙面基层铲除",
+      "value": "14㎡"
+    }],
+    "otherMsg": "该房屋在主卧有一个飘窗，飘窗大概有2㎡要打掉；该房屋在主卧有一个飘窗，飘窗大概有2㎡要打掉；该房屋在主卧有一个飘窗，飘窗大概有2㎡要打掉；该房屋在主卧有一个飘窗，飘窗大概有2㎡要打掉；该房屋在主卧有一个飘窗，飘窗大概有2㎡要打掉；",
+    "needAddress": "重庆市沙坪坝区大学城城南二路",
+		"endTime": "2017-5-20"
+	}
+}
