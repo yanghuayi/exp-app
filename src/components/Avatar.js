@@ -1,7 +1,8 @@
 /**
  * Created by wangdi on 4/11/16.
  */
-import React, {Component, PropTypes} from "react";
+import React, {Component} from "react";
+import PropTypes from 'prop-types';
 import {View, Image, Text} from "react-native";
 
 export default class Avatar extends Component {

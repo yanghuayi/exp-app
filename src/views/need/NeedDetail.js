@@ -68,7 +68,7 @@ export default class NeedDetail extends Component {
         {
           Icon.map(function (icon, index) {
             return (
-              <View style={[styles.needItem]}>
+              <View key={index} style={[styles.needItem]}>
                 <Image resizeMode="contain" style={styles.needItemIcon} source={icon} />
                 <Text style={[styles.needItemTxt]}>{Data.needDetail.Msg[index]}</Text>
               </View>
@@ -167,9 +167,9 @@ export default class NeedDetail extends Component {
           <View style={[styles.workerWrap]}>
             <View style={[styles.workerImgWrap]}>
               {
-                Data.needDetail.workerHead.map(function (img) {
+                Data.needDetail.workerHead.map(function (img, index) {
                   return (
-                    <Image style={[styles.workerHead]} source={{uri: img}} />
+                    <Image key={index} style={[styles.workerHead]} source={{uri: img}} />
                   )
                 })
               }
@@ -207,24 +207,6 @@ export default class NeedDetail extends Component {
             </Text>
           </View>
 					<View style={[styles.mapWrap]}>
-            {/*<AMap
-              ref={ component => this._amap = component }
-              style={{flex: 1, height: px2dp(200) }}
-              options={{
-                frame: {
-                  width: Utils.screen.width,
-                  height: px2dp(200)
-                },
-                showsUserLocation: false,
-                userTrackingMode: Platform.OS == 'ios' ? AMap.constants.userTrackingMode.none : null,
-                centerCoordinate: {
-                  latitude: this.state._coordinate.latitude,
-                  longitude: this.state._coordinate.longitude,
-                },
-                zoomLevel: 13.1,
-                centerMarker: Platform.OS == 'ios' ? 'icon_location' : 'poi_marker',
-              }}
-            />*/}
             <Components.MapView
               style={{ flex: 1, height: px2dp(200) }}
               initialRegion={{
@@ -245,9 +227,7 @@ export default class NeedDetail extends Component {
       </View>
     )
   };
-  tender () {
-
-  };
+  tender () {};
 }
 const styles = StyleSheet.create({
   image: {

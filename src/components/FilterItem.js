@@ -1,4 +1,5 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import {View, Text, Platform, StyleSheet, PixelRatio, ListView, TouchableOpacity, TouchableNativeFeedback } from 'react-native';
 import px2dp from '../util/px2dp';
 import Util from '../util/utils';

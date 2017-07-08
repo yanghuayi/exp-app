@@ -119,8 +119,10 @@ export default class HomeFragment extends Component {
     }else if(Platform.OS === 'android'){
       return (
         <TouchableNativeFeedback style={[styles.filterItem]} onPress={this._filter.bind(this, type)}>
-          <Text style={[styles.textName, active ? styles.onFtext : null]}>{filter.name === '全部' ? text : filter.name}</Text>
-          <Text style={[styles.filterIcon, active ? styles.onFicon: null]}>&#xe6ca;</Text>
+          <View style={[styles.androidFilter]}>
+            <Text style={[styles.textName, active ? styles.onFtext : null]}>{filter.name === '全部' ? text : filter.name}</Text>
+            <Text style={[styles.filterIcon, styles.androidFilterIcon, active ? styles.onAFicon: null]}>&#xe6ca;</Text>
+          </View>
         </TouchableNativeFeedback>
       )
     }
@@ -375,10 +377,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     borderBottomWidth: 1 / PixelRatio.get(),
     borderColor: '#e2e2e2',
+    flex: 1,
     flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
     paddingTop: px2dp(8),
     paddingBottom: px2dp(8),
-    zIndex: 8
+    zIndex: 8,
   },
   filterItem: {
     paddingTop: px2dp(6),
@@ -390,6 +395,21 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     borderRightWidth: 1 / PixelRatio.get(),
     borderColor: '#e2e2e2'
+  },
+  androidFilter: {
+    width: Util.screen.width / 3,
+    borderRightWidth: 1 / PixelRatio.get(),
+    borderColor: '#e2e2e2',
+    flexDirection: 'row',
+    justifyContent: 'center'
+  },
+  androidFilterIcon: {
+    position: 'relative',
+    top: px2dp(6)
+  },
+  onAFicon: {
+    color: '#ff634e',
+    transform: [{rotate: '180deg'}, {translateX: px2dp(-5)}, {translateY: px2dp(11)}]
   },
   textName: {
     color: '#666',
@@ -463,7 +483,7 @@ const styles = StyleSheet.create({
   itemTypeText: {
     fontSize: px2dp(10),
     color: '#fff',
-    lineHeight: px2dp(12)
+    lineHeight: Platform.OS === 'ios' ? px2dp(12) : px2dp(14)
   },
   itemTime: {
     fontSize: px2dp(11),

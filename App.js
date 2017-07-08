@@ -36,6 +36,9 @@ export default class App extends React.Component {
   render () {
     // if (this.state.fontLoaded) {return <AppLoading />;}
     // return null;
+    // return (
+    //   <Navigation />
+    // )
     return this.state.fontLoaded ? <Navigation /> : <AppLoading />
   }
 }

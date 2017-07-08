@@ -1,7 +1,8 @@
 /**
  * Created by wangdi on 13/11/16.
  */
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import {StyleSheet, View, Text, PixelRatio, Platform, TouchableOpacity} from 'react-native';
 import theme from '../config/theme';
 import px2dp from '../util/px2dp';

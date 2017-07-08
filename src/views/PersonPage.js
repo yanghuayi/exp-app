@@ -19,8 +19,10 @@ import {
   AsyncStorage,
   StatusBar
 } from 'react-native';
+import { Components } from 'expo';
+const { LinearGradient } = Components;
+
 import px2dp from '../util/px2dp';
-import LinearGradient from 'react-native-linear-gradient';
 import theme from '../config/theme';
 import Cell from '../components/Cell';
 export default class MeFragment extends Component {
@@ -185,8 +187,8 @@ export default class MeFragment extends Component {
               barStyle="light-content"
           />
           <LinearGradient
-              start={{x: .1, y: .8}}
-              end={{x: .9, y: .2}}
+              start={[.1, .8]}
+              end={[.9, .2]}
               colors={['#ff8c4e', '#ff634e']}
               style={styles.linearGradient} >
             <View style={styles.headWrap}>

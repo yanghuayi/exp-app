@@ -4,7 +4,7 @@
 'use strict';
 
 import React, {Component} from 'react';
-import {PixelRatio} from 'react-native';
+import {PixelRatio, Platform} from 'react-native';
 import {
   StackNavigator,
   TabNavigator,
@@ -97,7 +97,7 @@ const TabNav = TabNavigator({
     },
     labelStyle: {
       position: 'relative',
-      top: px2dp(-5),
+      top: Platform.OS === 'ios' ? px2dp(-5) : px2dp(-8),
       fontSize: px2dp(10)
     },
     indicatorStyle: {
@@ -105,7 +105,7 @@ const TabNav = TabNavigator({
     },
     iconStyle: {
       position: 'relative',
-      top: px2dp(-5)
+      top: Platform.OS === 'ios' ? px2dp(-5) : px2dp(-3)
     },
     showIcon: true
   },

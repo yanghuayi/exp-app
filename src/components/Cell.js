@@ -1,4 +1,5 @@
-import React, {Component, PropTypes} from "react";
+import React, {Component} from "react";
+import PropTypes from 'prop-types';
 import {View, Text, Platform, StyleSheet, PixelRatio, TouchableNativeFeedback, TouchableOpacity} from "react-native";
 import px2dp from '../util/px2dp';
 import theme from '../config/theme';
@@ -50,7 +51,7 @@ const styles = StyleSheet.create({
 export default class Cell extends Component {
   static propTypes = {
     icon: PropTypes.string.isRequired,
-    iconStyle: View.propTypes.style,
+    iconStyle: PropTypes.style,
     text: PropTypes.string.isRequired,
     rightTxt: PropTypes.string,
     arrowShow: PropTypes.bool,

@@ -1,4 +1,5 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import {View, Text, StyleSheet, StatusBar} from 'react-native';
 import px2dp from '../util/px2dp';
 export default class InsideBar extends Component {

@@ -3,7 +3,8 @@
  */
 'use strict';
 
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import {Text, View, StyleSheet, Platform, TouchableHighlight, TouchableNativeFeedback} from 'react-native';
 import px2dp from '../util/px2dp';
 import theme from '../config/theme';
